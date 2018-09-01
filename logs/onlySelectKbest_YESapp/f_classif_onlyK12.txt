@@ -1,0 +1,44 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules: 
+*  Ballond'OrNominee -> No
+
+
+Selecting 14 best features...SelectKBest
+.................
+feature descartada: AverageGoalspermatch
+feature descartada: AverageAssistspermatch
+feature descartada: Red
+feature descartada: SpG
+feature descartada: OffWon
+feature descartada: Clr
+feature descartada: WasDribbled
+feature descartada: BlkShots
+feature descartada: OG
+feature descartada: KeyPasses
+feature descartada: Fouled
+feature descartada: Offs
+feature descartada: Disp
+feature descartada: Avg.Passes
+feature descartada: PassSuc%
+-----------------select K--------
+Using the selected features for the testing data:
+['Apps', 'SubIn', 'Goals', 'Assists', 'Yellow', 'AW', 'Tackle', 'Int', 'Fouls', 'Dribbles', 'Trn', 'Crosses', 'LB', 'TB']
+
+----------------
+	
+OneR algorithm...
+discretizing... Apps
+discretizing... SubIn
+discretizing... Goals
+discretizing... Assists

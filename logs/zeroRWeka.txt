@@ -1,0 +1,78 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ZeroR 
+Relation:     CSV2012-2013_ALL_PLAYERS _YES_app_no goalkeeper_ No MOM
+Instances:    181
+Attributes:   30
+              Apps
+              SubIn
+              Goals
+              Assists
+              AverageGoalspermatch
+              AverageAssistspermatch
+              Yellow
+              Red
+              SpG
+              AW
+              Tackle
+              Int
+              Fouls
+              OffWon
+              Clr
+              WasDribbled
+              BlkShots
+              OG
+              KeyPasses
+              Dribbles
+              Fouled
+              Offs
+              Disp
+              Trn
+              Avg.Passes
+              PassSuc%
+              Crosses
+              LB
+              TB
+              Ballond'OrNominee
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: No
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          26               50      %
+Incorrectly Classified Instances        26               50      %
+Kappa statistic                          0     
+K&B Relative Info Score                  0      %
+K&B Information Score                    0      bits      0      bits/instance
+Class complexity | order 0              64.3721 bits      1.2379 bits/instance
+Class complexity | scheme               64.3721 bits      1.2379 bits/instance
+Complexity improvement     (Sf)          0      bits      0      bits/instance
+Mean absolute error                      0.5   
+Root mean squared error                  0.5659
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               52     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,500     Yes
+                 1,000    1,000    0,500      1,000    0,667      ?        0,500     0,500     No
+Weighted Avg.    0,500    0,500    ?          0,500    ?          ?        0,500     0,500     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  0 26 |  a = Yes
+  0 26 |  b = No
+
+

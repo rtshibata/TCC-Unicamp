@@ -1,0 +1,249 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules: 
+*  Ballond'OrNominee -> No
+
+
+Selecting 10 best features...SelectKBest
+.................
+feature descartada: SubIn
+feature descartada: AverageGoalspermatch
+feature descartada: AverageAssistspermatch
+feature descartada: Red
+feature descartada: SpG
+feature descartada: AW
+feature descartada: Tackle
+feature descartada: Int
+feature descartada: OffWon
+feature descartada: Clr
+feature descartada: WasDribbled
+feature descartada: BlkShots
+feature descartada: OG
+feature descartada: KeyPasses
+feature descartada: Fouled
+feature descartada: Offs
+feature descartada: Disp
+feature descartada: Avg.Passes
+feature descartada: PassSuc%
+-----------------select K--------
+Using the selected features for the testing data:
+['Apps', 'Goals', 'Assists', 'Yellow', 'Fouls', 'Dribbles', 'Trn', 'Crosses', 'LB', 'TB']
+
+----------------
+	
+OneR algorithm...
+discretizing... Apps
+discretizing... Goals
+discretizing... Assists
+discretizing... Yellow
+discretizing... Fouls
+discretizing... Dribbles
+discretizing... Trn
+discretizing... Crosses
+discretizing... LB
+discretizing... TB
+------------------------------------------
+Starting  1  -th cross over validation
+------------------------------------------
+['Apps']
+SET OF RULES AVERAGE ACCURACY:  94.7368421053  %
+------------------------------------------
+Starting  2  -th cross over validation
+------------------------------------------
+['Apps']
+SET OF RULES AVERAGE ACCURACY:  89.4736842105  %
+------------------------------------------
+Starting  3  -th cross over validation
+------------------------------------------
+['Apps']
+SET OF RULES AVERAGE ACCURACY:  94.4444444444  %
+------------------------------------------
+Starting  4  -th cross over validation
+------------------------------------------
+['Apps']
+SET OF RULES AVERAGE ACCURACY:  94.4444444444  %
+------------------------------------------
+Starting  5  -th cross over validation
+------------------------------------------
+['Apps']
+SET OF RULES AVERAGE ACCURACY:  100.0  %
+------------------------------------------
+Starting  6  -th cross over validation
+------------------------------------------
+['Apps']
+SET OF RULES AVERAGE ACCURACY:  94.4444444444  %
+------------------------------------------
+Starting  7  -th cross over validation
+------------------------------------------
+['Apps']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  8  -th cross over validation
+------------------------------------------
+['Apps']
+SET OF RULES AVERAGE ACCURACY:  83.3333333333  %
+------------------------------------------
+Starting  9  -th cross over validation
+------------------------------------------
+['Apps']
+SET OF RULES AVERAGE ACCURACY:  88.8888888889  %
+------------------------------------------
+Starting  10  -th cross over validation
+------------------------------------------
+['Apps']
+SET OF RULES AVERAGE ACCURACY:  76.4705882353  %
+------------------------------------------
+10  - fold crossover validation
+ 		
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF Apps = 0.0to10.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 10.0to20.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 20.0to30.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 30.0to40.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 40.0to50.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 50.0toinf THEN Ballond'OrNominee = Yes
+[0.9473684210526315, 0.8947368421052632, 0.9444444444444444, 0.9444444444444444, 1.0, 0.9444444444444444, 0.7777777777777778, 0.8333333333333334, 0.8888888888888888, 0.7647058823529411]
+TOTAL AVERAGE ACCURACY:  89.4014447884  %
+
+----------------
+	
+Logistic Regression algorithm...
+('ACCURACY: ', 93.37016574585635, ' %')
+
+----------------
+	
+Decision Tree Classifier algorithm...
+Decision tree data...:
+     Apps  Goals        ...                TB  Ballond'OrNominee
+0    58.0   64.0        ...          0.183871                Yes
+1    47.0   62.0        ...          0.379630                Yes
+2    46.0   17.0        ...          0.301923                Yes
+3    60.0   48.0        ...          0.329508                Yes
+4    36.0   22.0        ...          0.350000                Yes
+5    49.0    5.0        ...          0.518228                Yes
+6    50.0   36.0        ...          0.090909                Yes
+7    27.0   15.0        ...          0.454054                Yes
+8    49.0   31.0        ...          0.178431                Yes
+9    57.0    9.0        ...          0.722414                Yes
+10   50.0   38.0        ...          0.066667                Yes
+11   55.0   17.0        ...          0.305455                Yes
+12   57.0   45.0        ...          0.306557                Yes
+13   53.0    0.0        ...          0.181818                Yes
+14   50.0    8.0        ...          0.427586                Yes
+15   46.0   14.0        ...          0.429825                Yes
+16   48.0   10.0        ...          0.236000                Yes
+17   50.0   28.0        ...          0.171930                Yes
+18   55.0   48.0        ...          0.437931                Yes
+19   54.0   51.0        ...          0.253226                Yes
+20   49.0    4.0        ...          0.026531                Yes
+21   58.0   18.0        ...          0.066667                Yes
+22   37.0    0.0        ...          0.092500                 No
+23   23.0    7.0        ...          0.265385                 No
+24   23.0    6.0        ...          0.000000                 No
+25   37.0    7.0        ...          0.251351                 No
+26   20.0    8.0        ...          0.000000                 No
+27   13.0    0.0        ...          0.000000                 No
+28   38.0    8.0        ...          0.100000                 No
+29   31.0    6.0        ...          0.077143                 No
+..    ...    ...        ...               ...                ...
+151  27.0   13.0        ...          0.538462                 No
+152  26.0    2.0        ...          0.000000                 No
+153  24.0   17.0        ...          0.000000                 No
+154  33.0    3.0        ...          0.000000                 No
+155  32.0   19.0        ...          0.500000                 No
+156  19.0    6.0        ...          0.404167                 No
+157  32.0   16.0        ...          0.100000                 No
+158  14.0    6.0        ...          0.100000                 No
+159  30.0    7.0        ...          0.200000                 No
+160  25.0    6.0        ...          0.200000                 No
+161  24.0    8.0        ...          0.000000                 No
+162  11.0   11.0        ...          0.096154                 No
+163  22.0    5.0        ...          0.000000                 No
+164  35.0   19.0        ...          0.100000                 No
+165  28.0   12.0        ...          0.089362                 No
+166  26.0    2.0        ...          0.000000                 No
+167  18.0    7.0        ...          0.000000                 No
+168  33.0    2.0        ...          0.100000                 No
+169  34.0   17.0        ...          0.138095                 No
+170  43.0    3.0        ...          0.000000                 No
+171   7.0    4.0        ...          0.371429                 No
+172  30.0    2.0        ...          0.100000                 No
+173  37.0    2.0        ...          0.263636                 No
+174  29.0    3.0        ...          0.600000                 No
+175  48.0    1.0        ...          0.089583                 No
+176  28.0   10.0        ...          0.090323                 No
+177  33.0    1.0        ...          0.000000                 No
+178  11.0    5.0        ...          0.000000                 No
+179  31.0    1.0        ...          0.000000                 No
+180  25.0    3.0        ...          0.000000                 No
+
+[181 rows x 11 columns]
+('ACCURACY: ', 100.0, ' %')
+
+----------------
+	
+Support Vector Machines(SVM) algorithm...
+('ACCURACY: ', 97.79005524861878, ' %')
+
+
+-------
+testing data...ZeroR
+-------
+
+Accuracy  50.0  %
+('Correct predicted Instances: ', 26)
+
+-------
+testing data...OneR
+-------
+
+Accuracy  59.6153846154  %
+('Correct predicted Instances: ', 31)
+True positive: 5,  False Negative: 21
+False positive: 0, True Negative: 26
+
+-------
+testing data...LogisticRegression
+-------
+
+('Accuracy ', 73.07692307692307, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 12,  False Negative: 14
+False positive: 0, True Negative: 26
+
+-------
+testing data...Decision Tree
+-------
+
+('Accuracy ', 65.38461538461539, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 9,  False Negative: 17
+False positive: 1, True Negative: 25
+
+-------
+testing data...SVM(SVC)
+-------
+
+('Accuracy ', 50.0, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 0,  False Negative: 26
+False positive: 0, True Negative: 26

@@ -1,0 +1,241 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules: 
+*  Ballond'OrNominee -> No
+
+
+Selecting 8 best features...SelectKBest
+.................
+feature descartada: Apps
+feature descartada: SubIn
+feature descartada: Goals
+feature descartada: Assists
+feature descartada: AverageGoalspermatch
+feature descartada: AverageAssistspermatch
+feature descartada: Yellow
+feature descartada: Red
+feature descartada: AW
+feature descartada: Fouls
+feature descartada: OffWon
+feature descartada: Clr
+feature descartada: WasDribbled
+feature descartada: BlkShots
+feature descartada: OG
+feature descartada: KeyPasses
+feature descartada: Fouled
+feature descartada: Offs
+feature descartada: Disp
+feature descartada: Crosses
+feature descartada: TB
+-----------------select K--------
+Using the selected features for the testing data:
+['SpG', 'Tackle', 'Int', 'Dribbles', 'Trn', 'Avg.Passes', 'PassSuc%', 'LB']
+
+----------------
+	
+OneR algorithm...
+discretizing... SpG
+discretizing... Tackle
+discretizing... Int
+discretizing... Dribbles
+discretizing... Trn
+discretizing... Avg.Passes
+discretizing... PassSuc%
+discretizing... LB
+------------------------------------------
+Starting  1  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  73.6842105263  %
+------------------------------------------
+Starting  2  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  73.6842105263  %
+------------------------------------------
+Starting  3  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  4  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  5  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  6  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  7  -th cross over validation
+------------------------------------------
+['PassSuc%', 'LB', 'Trn', 'Int', 'Avg.Passes', 'Dribbles', 'Tackle', 'SpG']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  8  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  9  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  10  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  76.4705882353  %
+------------------------------------------
+10  - fold crossover validation
+ 		
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF LB = 0.0to112.5 THEN Ballond'OrNominee = No
+set of rules: 
+IF LB = 562.5toinf THEN Ballond'OrNominee = Yes
+[0.7368421052631579, 0.7368421052631579, 0.7777777777777778, 0.7777777777777778, 0.7777777777777778, 0.7777777777777778, 0.7777777777777778, 0.7777777777777778, 0.7777777777777778, 0.7647058823529411]
+TOTAL AVERAGE ACCURACY:  76.8283453732  %
+
+----------------
+	
+Logistic Regression algorithm...
+('ACCURACY: ', 84.5303867403315, ' %')
+
+----------------
+	
+Decision Tree Classifier algorithm...
+Decision tree data...:
+             SpG        ...          Ballond'OrNominee
+0       7.087097        ...                        Yes
+1       4.774074        ...                        Yes
+2       2.300000        ...                        Yes
+3       4.673770        ...                        Yes
+4       3.000000        ...                        Yes
+5       1.324680        ...                        Yes
+6       3.538182        ...                        Yes
+7       3.135135        ...                        Yes
+8       4.376471        ...                        Yes
+9       1.934483        ...                        Yes
+10      3.458824        ...                        Yes
+11      1.989091        ...                        Yes
+12      3.522951        ...                        Yes
+13      0.498182        ...                        Yes
+14      1.146552        ...                        Yes
+15      1.005263        ...                        Yes
+16      1.396000        ...                        Yes
+17      2.471930        ...                        Yes
+18      5.239655        ...                        Yes
+19      3.996774        ...                        Yes
+20      0.777551        ...                        Yes
+21      1.840909        ...                        Yes
+22      2.207500        ...                         No
+23      1.192308        ...                         No
+24      2.600000        ...                         No
+25      2.459459        ...                         No
+26      2.350000        ...                         No
+27      0.600000        ...                         No
+28      1.600000        ...                         No
+29      1.214286        ...                         No
+..           ...        ...                        ...
+151     2.400000        ...                         No
+152     0.900000        ...                         No
+153     2.500000        ...                         No
+154     0.636364        ...                         No
+155     2.200000        ...                         No
+156  2125.000000        ...                         No
+157     3.200000        ...                         No
+158     1.400000        ...                         No
+159     2.600000        ...                         No
+160     3.000000        ...                         No
+161     1.158824        ...                         No
+162     2.500000        ...                         No
+163     1.800000        ...                         No
+164     2.748837        ...                         No
+165     2.259574        ...                         No
+166     0.546154        ...                         No
+167     1.500000        ...                         No
+168     1.600000        ...                         No
+169     2.028571        ...                         No
+170     0.669767        ...                         No
+171     2.392857        ...                         No
+172     1.400000        ...                         No
+173     1.445455        ...                         No
+174     2.100000        ...                         No
+175     0.456250        ...                         No
+176     2.180645        ...                         No
+177     0.727273        ...                         No
+178     1.400000        ...                         No
+179     0.484211        ...                         No
+180     0.500000        ...                         No
+
+[181 rows x 9 columns]
+('ACCURACY: ', 100.0, ' %')
+
+----------------
+	
+Support Vector Machines(SVM) algorithm...
+('ACCURACY: ', 96.13259668508287, ' %')
+
+
+-------
+testing data...ZeroR
+-------
+
+Accuracy  50.0  %
+('Correct predicted Instances: ', 26)
+
+-------
+testing data...OneR
+-------
+
+Accuracy  50.0  %
+('Correct predicted Instances: ', 26)
+True positive: 0,  False Negative: 26
+False positive: 0, True Negative: 26
+
+-------
+testing data...LogisticRegression
+-------
+
+('Accuracy ', 53.84615384615385, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 5,  False Negative: 21
+False positive: 3, True Negative: 23
+
+-------
+testing data...Decision Tree
+-------
+
+('Accuracy ', 65.38461538461539, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 14,  False Negative: 12
+False positive: 6, True Negative: 20
+
+-------
+testing data...SVM(SVC)
+-------
+
+('Accuracy ', 50.0, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 1,  False Negative: 25
+False positive: 1, True Negative: 25

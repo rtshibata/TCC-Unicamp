@@ -1,0 +1,48 @@
+#!/usr/bin/python
+import sys
+import csv
+import oneR
+import zeroR
+#import discretize
+import pandas as pd
+
+path_2_csv_home = "../base"
+path_2_csv_ic ="/home/ec2010/ra082674/TCC/data"
+
+if len(sys.argv) != 2: 
+	print "entrar com 1 string como argumento: path do arquivo csv(entre aspas)\n"
+	exit(1)
+
+path_2_csv = sys.argv[1]
+
+#csv_name = 'CSV2012-2013_ALL_PLAYERS _No_app_no goalkeeper_ No MOM.csv'
+#path_2_csv = path_2_csv_home + "/" + csv_name
+
+with open(path_2_csv,'rb') as csv_playersdata:
+	data_reader = csv.reader(csv_playersdata,delimiter=',')
+	print """
+----------------
+loading data...
+----------------
+	"""
+	#Ballon D'or nominee values
+	class_values = ["Yes","No"]
+	inst_zeroR = zeroR.ZeroR(data_reader, class_values)
+	print ("ZeroR algorithm...")		
+	inst_zeroR.begin_zeroR()
+	for rule in inst_zeroR.list_rules:
+		print "set of rules: "
+		print "* ",rule
+		print "\n"
+	
+df = pd.read_csv(path_2_csv)
+df
+#minimal number of instances per bucket
+min_no_bucket = 6
+n_discret_bins = 10
+inst_oneR = oneR.OneR(data_reader, class_values, min_no_bucket,n_discret_bins)
+print ("OneR algorithm...")		
+inst_oneR.begin_oneR()
+for rule in inst_oneR.list_rules:
+	print "set of rules: "
+	print rule

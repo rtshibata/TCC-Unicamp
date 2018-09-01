@@ -1,0 +1,138 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules: 
+*  Ballond'OrNominee -> No
+
+
+OneR algorithm...
+feature descartada: SubIn
+feature descartada: Red
+feature descartada: AW
+feature descartada: Fouls
+feature descartada: OffWon
+feature descartada: BlkShots
+feature descartada: OG
+feature descartada: Crosses
+-----------------select K--------
+standarizando z-score...
+discretizing... Goals
+discretizing... Assists
+discretizing... AverageGoalspermatch
+discretizing... AverageAssistspermatch
+discretizing... Yellow
+discretizing... SpG
+discretizing... Tackle
+discretizing... Int
+discretizing... Clr
+discretizing... WasDribbled
+discretizing... KeyPasses
+discretizing... Dribbles
+discretizing... Fouled
+discretizing... Offs
+discretizing... Disp
+discretizing... Trn
+discretizing... Avg.Passes
+discretizing... PassSuc%
+discretizing... LB
+CHOSEN ATTR Goals
+ACCURACY OF SET Of RULES:  85.9756097561  %
+
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF Goals = -0.7757513to-0.2770663 THEN Ballond'OrNominee = No
+set of rules: 
+IF Goals = -0.2770663to0.2216186 THEN Ballond'OrNominee = No
+set of rules: 
+IF Goals = 0.2216187to0.7203036 THEN Ballond'OrNominee = No
+set of rules: 
+IF Goals = 0.7203037to1.2189886 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Goals = 1.2189887to1.7176736 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Goals = 1.7176737to2.2163586 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Goals = 2.7150437to3.2137286 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Goals = 3.7124137toinf THEN Ballond'OrNominee = Yes
+
+
+-------
+testing data...ZeroR
+-------
+
+Accuracy  50.0  %
+('Correct predicted Instances: ', 26)
+Marc Albrighton
+Recio
+Max Kruse
+Robin Knoche
+John Guidetti
+Bafetimbi Gomis
+Fernando Llorente
+Andrea Petagna
+Florin Andone
+Dusan Tadic
+Roberto Inglese
+Adam Lallana
+Chicharito
+Carlos Vela
+Lucas Moura
+Gabriel Paletta
+Gabriel Pires
+Diego Rolan
+Andros Townsend
+Roque Mesa
+Carlos Bacca
+Kiko Fermenia
+Morgan Schneiderlin
+Ruben Castro
+Mateo Musacchio
+Inaki Williams
+
+-------
+testing data...OneR
+-------
+
+Accuracy  53.8461538462  %
+('Correct predicted Instances: ', 28)
+Kiko Fermenia
+Mateo Musacchio
+Luka Modric
+N’Golo Kante
+Mats Hummels
+Marcelo
+Cristiano Ronaldo
+Lionel Messi
+Neymar Jr
+Leonardo Bonucci
+Isco
+Kylian Mbappe
+Eden Hazard
+Paulo Dybala
+Luis Suárez
+Sergio Ramos
+Philippe Coutinho
+Dries Mertens
+Kevin De Bruyne
+Robert Lewandowski
+Harry Kane 
+Edin Dzeko
+Antoine Griezmann
+Sadio Mane
+Toni Kroos
+Pierre-Emerick Aubameyang
+Karim Benzema
+Radamel Falcao

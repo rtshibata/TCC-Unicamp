@@ -1,0 +1,119 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 3
+Relation:     CSV2012-2013_ALL_PLAYERS _No_app_no goalkeeper_ No MOM-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last
+Instances:    181
+Attributes:   29
+              Sub In
+              Goals
+              Assists
+              Average Goals per match
+              Average Assists per match
+              Yellow
+              Red
+              SpG
+              AW
+              Tackle
+              Int
+              Fouls
+              Off Won
+              Clr
+              Was Dribbled
+              Blk Shots
+              OG
+              Key Passes
+              Dribbles
+              Fouled
+              Offs
+              Disp
+              Trn
+              Avg. Passes
+              Pass Suc%
+              Crosses
+              LB
+              TB
+              Ballon d'Or Nominee
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Goals = '(-inf-6.4]': No (99.0/9.0)
+Goals = '(6.4-12.8]'
+|   Pass Suc% = '(-inf-9.435539]': No (0.0)
+|   Pass Suc% = '(9.435539-18.871079]': No (0.0)
+|   Pass Suc% = '(18.871079-28.306618]': No (0.0)
+|   Pass Suc% = '(28.306618-37.742157]': No (0.0)
+|   Pass Suc% = '(37.742157-47.177696]': No (0.0)
+|   Pass Suc% = '(47.177696-56.613236]': No (0.0)
+|   Pass Suc% = '(56.613236-66.048775]': No (0.0)
+|   Pass Suc% = '(66.048775-75.484314]': No (11.0)
+|   Pass Suc% = '(75.484314-84.919853]': No (15.0)
+|   Pass Suc% = '(84.919853-inf)'
+|   |   SpG = '(-inf-0.70871]': Yes (0.0)
+|   |   SpG = '(0.70871-1.417419]': Yes (4.0/1.0)
+|   |   SpG = '(1.417419-2.126129]': Yes (3.0)
+|   |   SpG = '(2.126129-2.834839]': No (2.0)
+|   |   SpG = '(2.834839-3.543548]': Yes (0.0)
+|   |   SpG = '(3.543548-4.252258]': Yes (0.0)
+|   |   SpG = '(4.252258-4.960968]': Yes (0.0)
+|   |   SpG = '(4.960968-5.669677]': Yes (0.0)
+|   |   SpG = '(5.669677-6.378387]': Yes (0.0)
+|   |   SpG = '(6.378387-inf)': Yes (0.0)
+Goals = '(12.8-19.2]'
+|   Pass Suc% = '(-inf-9.435539]': No (0.0)
+|   Pass Suc% = '(9.435539-18.871079]': No (0.0)
+|   Pass Suc% = '(18.871079-28.306618]': No (0.0)
+|   Pass Suc% = '(28.306618-37.742157]': No (0.0)
+|   Pass Suc% = '(37.742157-47.177696]': No (0.0)
+|   Pass Suc% = '(47.177696-56.613236]': No (0.0)
+|   Pass Suc% = '(56.613236-66.048775]': Yes (1.0)
+|   Pass Suc% = '(66.048775-75.484314]': No (7.0/1.0)
+|   Pass Suc% = '(75.484314-84.919853]': No (14.0/2.0)
+|   Pass Suc% = '(84.919853-inf)': Yes (3.0)
+Goals = '(19.2-25.6]': Yes (4.0/1.0)
+Goals = '(25.6-32]': Yes (5.0/1.0)
+Goals = '(32-38.4]': Yes (5.0)
+Goals = '(38.4-44.8]': No (0.0)
+Goals = '(44.8-51.2]': Yes (4.0)
+Goals = '(51.2-57.6]': No (0.0)
+Goals = '(57.6-inf)': Yes (4.0)
+
+Number of Leaves  : 	37
+
+Size of the tree : 	41
+
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         166               91.7127 %
+Incorrectly Classified Instances        15                8.2873 %
+Kappa statistic                          0.7487
+Mean absolute error                      0.1442
+Root mean squared error                  0.2685
+Relative absolute error                 40.2926 %
+Root relative squared error             63.6145 %
+Total Number of Instances              181     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,714    0,022    0,909      0,714    0,800      0,757    0,890     0,800     Yes
+                 0,978    0,286    0,919      0,978    0,948      0,757    0,890     0,941     No
+Weighted Avg.    0,917    0,224    0,917      0,917    0,913      0,757    0,890     0,908     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  30  12 |   a = Yes
+   3 136 |   b = No
+
+

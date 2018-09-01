@@ -1,0 +1,147 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules: 
+*  Ballond'OrNominee -> No
+
+
+OneR algorithm...
+discretizing... SubIn
+discretizing... Goals
+discretizing... Assists
+discretizing... AverageGoalspermatch
+discretizing... AverageAssistspermatch
+discretizing... Yellow
+discretizing... Red
+discretizing... SpG
+discretizing... AW
+discretizing... Tackle
+discretizing... Int
+discretizing... Fouls
+discretizing... OffWon
+discretizing... Clr
+discretizing... WasDribbled
+discretizing... BlkShots
+discretizing... OG
+discretizing... KeyPasses
+discretizing... Dribbles
+discretizing... Fouled
+discretizing... Offs
+discretizing... Disp
+discretizing... Trn
+discretizing... Avg.Passes
+discretizing... PassSuc%
+discretizing... Crosses
+discretizing... LB
+discretizing... TB
+CHOSEN ATTR Goals
+ACCURACY OF SET Of RULES:  86.7403314917  %
+
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF Goals = 0.0to6.4 THEN Ballond'OrNominee = No
+set of rules: 
+IF Goals = 6.4to12.8 THEN Ballond'OrNominee = No
+set of rules: 
+IF Goals = 12.8to19.2 THEN Ballond'OrNominee = No
+set of rules: 
+IF Goals = 19.2to25.6 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Goals = 25.6to32.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Goals = 32.0to38.4 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Goals = 44.8to51.2 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Goals = 57.6toinf THEN Ballond'OrNominee = Yes
+
+
+-------
+testing data...ZeroR
+-------
+
+Accuracy  50.0  %
+('Correct predicted Instances: ', 26)
+Marc Albrighton
+Recio
+Max Kruse
+Robin Knoche
+John Guidetti
+Bafetimbi Gomis
+Fernando Llorente
+Andrea Petagna
+Florin Andone
+Dusan Tadic
+Roberto Inglese
+Adam Lallana
+Chicharito
+Carlos Vela
+Lucas Moura
+Gabriel Paletta
+Gabriel Pires
+Diego Rolan
+Andros Townsend
+Roque Mesa
+Carlos Bacca
+Kiko Fermenia
+Morgan Schneiderlin
+Ruben Castro
+Mateo Musacchio
+Inaki Williams
+
+-------
+testing data...OneR
+-------
+
+Accuracy  69.2307692308  %
+('Correct predicted Instances: ', 36)
+True positive: 11,  False Negative: 15
+False positive: 1, True Negative: 25
+No Marc Albrighton
+No Recio
+No Robin Knoche
+No Andrea Petagna
+No Dusan Tadic
+No Gabriel Paletta
+No Gabriel Pires
+No Andros Townsend
+No Roque Mesa
+No Kiko Fermenia
+No Morgan Schneiderlin
+No Mateo Musacchio
+No Inaki Williams
+No John Guidetti
+No Florin Andone
+No Roberto Inglese
+No Adam Lallana
+No Chicharito
+No Carlos Vela
+No Diego Rolan
+No Max Kruse
+No Fernando Llorente
+No Lucas Moura
+No Carlos Bacca
+No Ruben Castro
+Yes Kylian Mbappe
+Yes Antoine Griezmann
+Yes Harry Kane 
+Yes Radamel Falcao
+Yes Cristiano Ronaldo
+Yes Luis Suárez
+Yes Dries Mertens
+Yes Robert Lewandowski
+Yes Edin Dzeko
+Yes Pierre-Emerick Aubameyang
+Yes Lionel Messi

@@ -1,0 +1,241 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules: 
+*  Ballond'OrNominee -> No
+
+
+Selecting 5 best features...SelectKBest
+.................
+feature descartada: Apps
+feature descartada: SubIn
+feature descartada: Goals
+feature descartada: Assists
+feature descartada: AverageGoalspermatch
+feature descartada: AverageAssistspermatch
+feature descartada: Yellow
+feature descartada: Red
+feature descartada: SpG
+feature descartada: AW
+feature descartada: Tackle
+feature descartada: Fouls
+feature descartada: OffWon
+feature descartada: Clr
+feature descartada: WasDribbled
+feature descartada: BlkShots
+feature descartada: OG
+feature descartada: KeyPasses
+feature descartada: Dribbles
+feature descartada: Fouled
+feature descartada: Offs
+feature descartada: Disp
+feature descartada: Crosses
+feature descartada: TB
+-----------------select K--------
+Using the selected features for the testing data:
+['Int', 'Trn', 'Avg.Passes', 'PassSuc%', 'LB']
+
+----------------
+	
+OneR algorithm...
+discretizing... Int
+discretizing... Trn
+discretizing... Avg.Passes
+discretizing... PassSuc%
+discretizing... LB
+------------------------------------------
+Starting  1  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  73.6842105263  %
+------------------------------------------
+Starting  2  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  73.6842105263  %
+------------------------------------------
+Starting  3  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  4  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  5  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  6  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  7  -th cross over validation
+------------------------------------------
+['Int', 'PassSuc%', 'Avg.Passes', 'LB', 'Trn']
+SET OF RULES AVERAGE ACCURACY:  76.4705882353  %
+------------------------------------------
+Starting  8  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  9  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  10  -th cross over validation
+------------------------------------------
+['LB']
+SET OF RULES AVERAGE ACCURACY:  76.4705882353  %
+------------------------------------------
+10  - fold crossover validation
+ 		
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF LB = 0.0to112.5 THEN Ballond'OrNominee = No
+set of rules: 
+IF LB = 562.5toinf THEN Ballond'OrNominee = Yes
+[0.7368421052631579, 0.7368421052631579, 0.7777777777777778, 0.7777777777777778, 0.7777777777777778, 0.7777777777777778, 0.7647058823529411, 0.7777777777777778, 0.7777777777777778, 0.7647058823529411]
+TOTAL AVERAGE ACCURACY:  76.697626419  %
+
+----------------
+	
+Logistic Regression algorithm...
+('ACCURACY: ', 83.97790055248619, ' %')
+
+----------------
+	
+Decision Tree Classifier algorithm...
+Decision tree data...:
+          Int       Trn        ...                LB  Ballond'OrNominee
+0    0.261290  1.764516        ...          0.716129                Yes
+1    0.300000  1.116667        ...          1.753704                Yes
+2    0.988462  1.415385        ...          2.915385                Yes
+3    0.400000  2.467213        ...          1.721311                Yes
+4    0.350000  2.300000        ...          0.800000                Yes
+5    0.548643  0.773477        ...          3.225653                Yes
+6    0.338182  1.229091        ...          1.032727                Yes
+7    0.875676  1.056757        ...          0.697297                Yes
+8    1.052941  1.527451        ...          1.229972                Yes
+9    1.489655  0.505172        ...          9.432759                Yes
+10   0.154902  2.774510        ...          0.623529                Yes
+11   1.014545  0.770909        ...          5.490909                Yes
+12   0.265574  2.601639        ...          0.457377                Yes
+13   1.696364  0.292727        ...          4.867273                Yes
+14   0.706897  0.856897        ...          7.600000                Yes
+15   0.477193  1.650877        ...          1.405263                Yes
+16   1.320000  0.984000        ...          8.132000                Yes
+17   0.608772  1.498246        ...          0.678947                Yes
+18   0.546552  2.500000        ...          1.944828                Yes
+19   0.524194  1.775806        ...          1.114516                Yes
+20   2.765306  0.073469        ...          5.383673                Yes
+21   0.987879  1.859091        ...          1.136364                Yes
+22   0.392500  1.132500        ...          1.410000                 No
+23   0.807692  1.146154        ...          1.811538                 No
+24   0.600000  1.200000        ...          0.900000                 No
+25   1.502703  1.029730        ...          2.086486                 No
+26   0.250000  1.475000        ...          0.350000                 No
+27   1.500000  1.100000        ...          0.400000                 No
+28   0.700000  1.800000        ...          0.100000                 No
+29   1.068571  1.531429        ...          0.900000                 No
+..        ...       ...        ...               ...                ...
+151  0.748718  1.400000        ...          2.235897                 No
+152  3.200000  0.200000        ...          3.900000                 No
+153  0.800000  1.700000        ...          0.300000                 No
+154  2.345455  0.081818        ...          4.818182                 No
+155  0.700000  2.100000        ...          1.300000                 No
+156  1.016667  1.658333        ...          0.758333                 No
+157  0.500000  2.600000        ...          0.500000                 No
+158  0.300000  0.800000        ...          0.200000                 No
+159  0.400000  1.500000        ...          0.400000                 No
+160  0.400000  3.100000        ...          0.600000                 No
+161  0.752941  2.288235        ...          0.376471                 No
+162  0.192308  1.346154        ...          0.192308                 No
+163  0.500000  1.300000        ...          0.200000                 No
+164  0.232558  1.783721        ...          0.818605                 No
+165  0.353191  1.859574        ...          0.289362                 No
+166  1.407692  0.215385        ...          2.238462                 No
+167  1.400000  1.000000        ...          0.200000                 No
+168  0.900000  1.100000        ...          1.300000                 No
+169  0.938095  2.123810        ...          0.400000                 No
+170  2.551163  0.527907        ...          6.460465                 No
+171  0.278571  1.300000        ...          0.928571                 No
+172  3.400000  1.200000        ...          5.800000                 No
+173  1.981818  0.990909        ...          6.872727                 No
+174  1.200000  0.900000        ...          3.000000                 No
+175  2.689583  0.295833        ...          6.562500                 No
+176  0.300000  2.203226        ...          1.645161                 No
+177  3.209091  0.545455        ...          2.727273                 No
+178  0.600000  0.900000        ...          0.400000                 No
+179  2.226316  0.715789        ...          1.610526                 No
+180  5.300000  0.600000        ...          3.000000                 No
+
+[181 rows x 6 columns]
+('ACCURACY: ', 100.0, ' %')
+
+----------------
+	
+Support Vector Machines(SVM) algorithm...
+('ACCURACY: ', 94.47513812154696, ' %')
+
+
+-------
+testing data...ZeroR
+-------
+
+Accuracy  50.0  %
+('Correct predicted Instances: ', 26)
+
+-------
+testing data...OneR
+-------
+
+Accuracy  50.0  %
+('Correct predicted Instances: ', 26)
+True positive: 0,  False Negative: 26
+False positive: 0, True Negative: 26
+
+-------
+testing data...LogisticRegression
+-------
+
+('Accuracy ', 57.692307692307686, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 6,  False Negative: 20
+False positive: 2, True Negative: 24
+
+-------
+testing data...Decision Tree
+-------
+
+('Accuracy ', 65.38461538461539, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 14,  False Negative: 12
+False positive: 6, True Negative: 20
+
+-------
+testing data...SVM(SVC)
+-------
+
+('Accuracy ', 48.07692307692308, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 0,  False Negative: 26
+False positive: 1, True Negative: 25

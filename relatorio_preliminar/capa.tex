@@ -1,0 +1,76 @@
+% Exemplo de relatório técnico do IC
+
+
+\nonstopmode % PARA RODAR LATEX EM BATCH MODE
+\documentclass[11pt,twoside]{article}
+
+\usepackage{techrep-ic}
+
+%%% SE USAR INGLÊS, TROQUE AS ATIVAÇÕES DOS DOIS COMANDOS A SEGUIR:
+%%\usepackage[brazil]{babel}
+ \usepackage[english]{babel}
+
+%%% SE USAR CODIFICAÇÃO LATIN1 OU UTF-8, ATIVE UM DOS DOIS COMANDOS A
+%%% SEGUIR:
+%%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+
+%%% Para obter o tamanho de texto recomendado:
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+%%% PÁGINA DE CAPA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% Número do relatório
+\TRNumber{???} % Dois dígitos
+
+% DATA DE PUBLICAÇÃO (PARA A CAPA)
+%
+\TRYear{18} % Dois dígitos
+\TRMonth{07} % Numérico, 01-12
+
+% LISTA DE AUTORES PARA CAPA (sem afiliações).
+\TRAuthor{R. T. Shibata \and H. Pedrini}
+
+% TÍTULO PARA A CAPA (use \\ para forçar quebras de linha).
+\TRTitle{Data Mining Approach to build a classification predictor \\ for the nominee soccer players of Ballon d’Or award}
+
+\TRMakeCover
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% O que segue é apenas uma sugestão - sinta-se à vontade para
+% usar seu formato predileto, desde que as margens tenham pelo
+% menos 25mm nos quatro lados, e o tamanho do fonte seja pelo menos
+% 11pt. Certifique-se também de que o título e lista de autores
+% estão reproduzidos na íntegra na página 1, a primeira depois da
+% página de capa.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Nomes de autores ABREVIADOS e titulo ABREVIADO,
+% para cabeçalhos em cada página.
+%
+\markboth{Shibata e Pedrini}{Data mining for Ballon dOr}
+\pagestyle{myheadings}
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TÍTULO e NOMES DOS AUTORES, completos, para a página 1.
+% Use "\\" para quebrar linhas, "\and" para separar autores.
+%
+%\title{Data Mining Approach to build a classification predictor for the nominee soccer players of Ballon d’Or award}
+
+%\author{Renato Toshiaki Shibata\thanks{Inst.~de Computação, UNICAMP, Undergraduate Course, Computer Engineering. \texttt{ra082674@dac.unicamp.br}} \and
+%Hélio Pedrini\thanks{Inst.~de Computação, UNICAMP, 13083-970
+%Campinas,  SP, Brazil. \texttt{helio@ic.unicamp.br}}}
+
+%\date{}
+
+%\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}

@@ -1,0 +1,529 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules:  
+*  Ballond'OrNominee -> No
+
+
+OneR algorithm...
+discretizing... SubIn
+discretizing... Goals
+discretizing... Assists
+discretizing... AverageGoalspermatch
+discretizing... AverageAssistspermatch
+discretizing... Yellow
+discretizing... Red
+discretizing... SpG
+discretizing... AW
+discretizing... Tackle
+discretizing... Int
+discretizing... Fouls
+discretizing... OffWon
+discretizing... Clr
+discretizing... WasDribbled
+discretizing... BlkShots
+discretizing... OG
+discretizing... KeyPasses
+discretizing... Dribbles
+discretizing... Fouled
+discretizing... Offs
+discretizing... Disp
+discretizing... Trn
+discretizing... Avg.Passes
+discretizing... PassSuc%
+discretizing... Crosses
+discretizing... LB
+discretizing... TB
+------------------------------------------
+Starting  1  -th cross over validation
+------------------------------------------
+SubIn 0.764331210191
+Goals 0.854166666667
+Assists 0.86013986014
+AverageGoalspermatch 0.853146853147
+AverageAssistspermatch 0.833333333333
+Yellow 0.797385620915
+Red 0.772151898734
+SpG 0.822368421053
+AW 0.770186335404
+Tackle 0.76875
+Int 0.761290322581
+Fouls 0.779220779221
+OffWon 0.760563380282
+Clr 0.755244755245
+WasDribbled 0.763513513514
+BlkShots 0.766233766234
+OG 0.76875
+KeyPasses 0.823529411765
+Dribbles 0.791946308725
+Fouled 0.76582278481
+Offs 0.798611111111
+Disp 0.777777777778
+Trn 0.781456953642
+Avg.Passes 0.842465753425
+PassSuc% 0.786163522013
+Crosses 0.778571428571
+LB 0.81884057971
+TB 0.818181818182
+CHOSEN ATTR Assists
+('0.0to2.4', 'No')
+IF Assists = 0.0to2.4 THEN Ballond'OrNominee = No
+5
+('2.4to4.8', 'No')
+IF Assists = 2.4to4.8 THEN Ballond'OrNominee = No
+8
+('4.8to7.2', 'No')
+IF Assists = 4.8to7.2 THEN Ballond'OrNominee = No
+13
+('7.2to9.6', 'No')
+IF Assists = 7.2to9.6 THEN Ballond'OrNominee = No
+14
+('9.6to12.0', 'Yes')
+IF Assists = 9.6to12.0 THEN Ballond'OrNominee = Yes
+14
+SET OF RULES AVERAGE ACCURACY:  100.0  %
+------------------------------------------
+Starting  2  -th cross over validation
+------------------------------------------
+SubIn 0.764331210191
+Goals 0.866197183099
+Assists 0.872340425532
+AverageGoalspermatch 0.87074829932
+AverageAssistspermatch 0.829931972789
+Yellow 0.818181818182
+Red 0.777070063694
+SpG 0.833333333333
+AW 0.770186335404
+Tackle 0.770186335404
+Int 0.761290322581
+Fouls 0.777777777778
+OffWon 0.760563380282
+Clr 0.758620689655
+WasDribbled 0.766666666667
+BlkShots 0.766233766234
+OG 0.767295597484
+KeyPasses 0.822222222222
+Dribbles 0.805369127517
+Fouled 0.770700636943
+Offs 0.804195804196
+Disp 0.789473684211
+Trn 0.793333333333
+Avg.Passes 0.830985915493
+PassSuc% 0.792452830189
+Crosses 0.786764705882
+LB 0.820895522388
+TB 0.801369863014
+CHOSEN ATTR Assists
+('0.0to2.4', 'No')
+IF Assists = 0.0to2.4 THEN Ballond'OrNominee = No
+7
+('2.4to4.8', 'No')
+IF Assists = 2.4to4.8 THEN Ballond'OrNominee = No
+9
+('4.8to7.2', 'No')
+IF Assists = 4.8to7.2 THEN Ballond'OrNominee = No
+11
+('7.2to9.6', 'No')
+IF Assists = 7.2to9.6 THEN Ballond'OrNominee = No
+14
+('9.6to12.0', 'Yes')
+IF Assists = 9.6to12.0 THEN Ballond'OrNominee = Yes
+16
+SET OF RULES AVERAGE ACCURACY:  87.5  %
+------------------------------------------
+Starting  3  -th cross over validation
+------------------------------------------
+SubIn 0.761589403974
+Goals 0.86013986014
+Assists 0.886524822695
+AverageGoalspermatch 0.847682119205
+AverageAssistspermatch 0.825503355705
+Yellow 0.790849673203
+Red 0.775
+SpG 0.839743589744
+AW 0.766871165644
+Tackle 0.76397515528
+Int 0.75641025641
+Fouls 0.772727272727
+OffWon 0.761904761905
+Clr 0.756756756757
+WasDribbled 0.758389261745
+BlkShots 0.76582278481
+OG 0.76397515528
+KeyPasses 0.809523809524
+Dribbles 0.802721088435
+Fouled 0.76582278481
+Offs 0.8
+Disp 0.782894736842
+Trn 0.777777777778
+Avg.Passes 0.825174825175
+PassSuc% 0.78125
+Crosses 0.76821192053
+LB 0.805970149254
+TB 0.813793103448
+CHOSEN ATTR Assists
+('0.0to2.4', 'No')
+IF Assists = 0.0to2.4 THEN Ballond'OrNominee = No
+7
+('2.4to4.8', 'No')
+IF Assists = 2.4to4.8 THEN Ballond'OrNominee = No
+10
+('4.8to7.2', 'No')
+IF Assists = 4.8to7.2 THEN Ballond'OrNominee = No
+12
+('7.2to9.6', 'No')
+IF Assists = 7.2to9.6 THEN Ballond'OrNominee = No
+13
+('9.6to12.0', 'Yes')
+IF Assists = 9.6to12.0 THEN Ballond'OrNominee = Yes
+16
+SET OF RULES AVERAGE ACCURACY:  75.0  %
+------------------------------------------
+Starting  4  -th cross over validation
+------------------------------------------
+SubIn 0.758169934641
+Goals 0.867132867133
+Assists 0.866197183099
+AverageGoalspermatch 0.870967741935
+AverageAssistspermatch 0.816901408451
+Yellow 0.796052631579
+Red 0.772151898734
+SpG 0.846153846154
+AW 0.765432098765
+Tackle 0.76397515528
+Int 0.75641025641
+Fouls 0.767741935484
+OffWon 0.756944444444
+Clr 0.751724137931
+WasDribbled 0.751677852349
+BlkShots 0.762820512821
+OG 0.764705882353
+KeyPasses 0.830882352941
+Dribbles 0.808219178082
+Fouled 0.76582278481
+Offs 0.809523809524
+Disp 0.78431372549
+Trn 0.788079470199
+Avg.Passes 0.823943661972
+PassSuc% 0.775
+Crosses 0.764705882353
+LB 0.801418439716
+TB 0.813793103448
+CHOSEN ATTR AverageGoalspermatch
+('0.0to0.1333', 'No')
+IF AverageGoalspermatch = 0.0to0.1333 THEN Ballond'OrNominee = No
+3
+('0.1333to0.2667', 'No')
+IF AverageGoalspermatch = 0.1333to0.2667 THEN Ballond'OrNominee = No
+9
+('0.2666to0.4', 'No')
+IF AverageGoalspermatch = 0.2666to0.4 THEN Ballond'OrNominee = No
+10
+('0.3999to0.5333', 'No')
+IF AverageGoalspermatch = 0.3999to0.5333 THEN Ballond'OrNominee = No
+17
+('0.5332to0.6666', 'Yes')
+IF AverageGoalspermatch = 0.5332to0.6666 THEN Ballond'OrNominee = Yes
+18
+('0.6665to0.7999', 'Yes')
+IF AverageGoalspermatch = 0.6665to0.7999 THEN Ballond'OrNominee = Yes
+18
+SET OF RULES AVERAGE ACCURACY:  72.2222222222  %
+------------------------------------------
+Starting  5  -th cross over validation
+------------------------------------------
+SubIn 0.761006289308
+Goals 0.861111111111
+Assists 0.878571428571
+AverageGoalspermatch 0.859872611465
+AverageAssistspermatch 0.831081081081
+Yellow 0.785714285714
+Red 0.772151898734
+SpG 0.829113924051
+AW 0.765432098765
+Tackle 0.76397515528
+Int 0.753333333333
+Fouls 0.771241830065
+OffWon 0.755102040816
+Clr 0.75
+WasDribbled 0.756756756757
+BlkShots 0.753333333333
+OG 0.7625
+KeyPasses 0.827586206897
+Dribbles 0.8
+Fouled 0.770186335404
+Offs 0.794520547945
+Disp 0.779220779221
+Trn 0.781456953642
+Avg.Passes 0.836734693878
+PassSuc% 0.7875
+Crosses 0.77304964539
+LB 0.813432835821
+TB 0.806896551724
+CHOSEN ATTR Assists
+('0.0to2.4', 'No')
+IF Assists = 0.0to2.4 THEN Ballond'OrNominee = No
+8
+('2.4to4.8', 'No')
+IF Assists = 2.4to4.8 THEN Ballond'OrNominee = No
+12
+('4.8to7.2', 'No')
+IF Assists = 4.8to7.2 THEN Ballond'OrNominee = No
+14
+('7.2to9.6', 'No')
+IF Assists = 7.2to9.6 THEN Ballond'OrNominee = No
+15
+('9.6to12.0', 'Yes')
+IF Assists = 9.6to12.0 THEN Ballond'OrNominee = Yes
+17
+SET OF RULES AVERAGE ACCURACY:  82.3529411765  %
+------------------------------------------
+Starting  6  -th cross over validation
+------------------------------------------
+SubIn 0.763157894737
+Goals 0.86013986014
+Assists 0.87969924812
+AverageGoalspermatch 0.853503184713
+AverageAssistspermatch 0.816901408451
+Yellow 0.796052631579
+Red 0.772151898734
+SpG 0.829113924051
+AW 0.765432098765
+Tackle 0.76397515528
+Int 0.75641025641
+Fouls 0.766233766234
+OffWon 0.755244755245
+Clr 0.75
+WasDribbled 0.756756756757
+BlkShots 0.761290322581
+OG 0.7625
+KeyPasses 0.816326530612
+Dribbles 0.804054054054
+Fouled 0.76582278481
+Offs 0.798611111111
+Disp 0.782894736842
+Trn 0.786666666667
+Avg.Passes 0.822368421053
+PassSuc% 0.775
+Crosses 0.784172661871
+LB 0.807142857143
+TB 0.791946308725
+CHOSEN ATTR Assists
+('0.0to2.4', 'No')
+IF Assists = 0.0to2.4 THEN Ballond'OrNominee = No
+4
+('2.4to4.8', 'No')
+IF Assists = 2.4to4.8 THEN Ballond'OrNominee = No
+5
+('4.8to7.2', 'No')
+IF Assists = 4.8to7.2 THEN Ballond'OrNominee = No
+12
+('7.2to9.6', 'No')
+IF Assists = 7.2to9.6 THEN Ballond'OrNominee = No
+13
+SET OF RULES AVERAGE ACCURACY:  100.0  %
+------------------------------------------
+Starting  7  -th cross over validation
+------------------------------------------
+SubIn 0.761006289308
+Goals 0.86013986014
+Assists 0.880281690141
+AverageGoalspermatch 0.847682119205
+AverageAssistspermatch 0.831081081081
+Yellow 0.803921568627
+Red 0.772151898734
+SpG 0.822368421053
+AW 0.765432098765
+Tackle 0.76397515528
+Int 0.759493670886
+Fouls 0.772727272727
+OffWon 0.755244755245
+Clr 0.75
+WasDribbled 0.763157894737
+BlkShots 0.761290322581
+OG 0.7625
+KeyPasses 0.808219178082
+Dribbles 0.808219178082
+Fouled 0.76582278481
+Offs 0.793103448276
+Disp 0.779220779221
+Trn 0.781456953642
+Avg.Passes 0.833333333333
+PassSuc% 0.788819875776
+Crosses 0.756756756757
+LB 0.817518248175
+TB 0.809523809524
+CHOSEN ATTR Assists
+('0.0to2.4', 'No')
+IF Assists = 0.0to2.4 THEN Ballond'OrNominee = No
+5
+('2.4to4.8', 'No')
+IF Assists = 2.4to4.8 THEN Ballond'OrNominee = No
+12
+('4.8to7.2', 'No')
+IF Assists = 4.8to7.2 THEN Ballond'OrNominee = No
+14
+('7.2to9.6', 'No')
+IF Assists = 7.2to9.6 THEN Ballond'OrNominee = No
+15
+('9.6to12.0', 'Yes')
+IF Assists = 9.6to12.0 THEN Ballond'OrNominee = Yes
+15
+SET OF RULES AVERAGE ACCURACY:  80.0  %
+------------------------------------------
+Starting  8  -th cross over validation
+------------------------------------------
+SubIn 0.761589403974
+Goals 0.86013986014
+Assists 0.886363636364
+AverageGoalspermatch 0.853503184713
+AverageAssistspermatch 0.822695035461
+Yellow 0.8125
+Red 0.772151898734
+SpG 0.827814569536
+AW 0.765432098765
+Tackle 0.76397515528
+Int 0.759493670886
+Fouls 0.766233766234
+OffWon 0.753521126761
+Clr 0.755102040816
+WasDribbled 0.753333333333
+BlkShots 0.763157894737
+OG 0.7625
+KeyPasses 0.804054054054
+Dribbles 0.809523809524
+Fouled 0.767295597484
+Offs 0.798611111111
+Disp 0.777777777778
+Trn 0.786666666667
+Avg.Passes 0.819444444444
+PassSuc% 0.795031055901
+Crosses 0.783783783784
+LB 0.807407407407
+TB 0.808219178082
+CHOSEN ATTR Assists
+('0.0to2.4', 'No')
+IF Assists = 0.0to2.4 THEN Ballond'OrNominee = No
+8
+('2.4to4.8', 'No')
+IF Assists = 2.4to4.8 THEN Ballond'OrNominee = No
+10
+('4.8to7.2', 'No')
+IF Assists = 4.8to7.2 THEN Ballond'OrNominee = No
+11
+('7.2to9.6', 'No')
+IF Assists = 7.2to9.6 THEN Ballond'OrNominee = No
+14
+SET OF RULES AVERAGE ACCURACY:  92.8571428571  %
+------------------------------------------
+Starting  9  -th cross over validation
+------------------------------------------
+SubIn 0.763157894737
+Goals 0.86013986014
+Assists 0.878571428571
+AverageGoalspermatch 0.86013986014
+AverageAssistspermatch 0.821428571429
+Yellow 0.790849673203
+Red 0.772151898734
+SpG 0.827814569536
+AW 0.765432098765
+Tackle 0.76397515528
+Int 0.75641025641
+Fouls 0.771241830065
+OffWon 0.753424657534
+Clr 0.748299319728
+WasDribbled 0.758389261745
+BlkShots 0.754966887417
+OG 0.7625
+KeyPasses 0.8
+Dribbles 0.808219178082
+Fouled 0.76582278481
+Offs 0.808219178082
+Disp 0.785714285714
+Trn 0.790849673203
+Avg.Passes 0.831081081081
+PassSuc% 0.776397515528
+Crosses 0.764705882353
+LB 0.802816901408
+TB 0.808219178082
+CHOSEN ATTR Assists
+('0.0to2.4', 'No')
+IF Assists = 0.0to2.4 THEN Ballond'OrNominee = No
+11
+('2.4to4.8', 'No')
+IF Assists = 2.4to4.8 THEN Ballond'OrNominee = No
+13
+('4.8to7.2', 'No')
+IF Assists = 4.8to7.2 THEN Ballond'OrNominee = No
+15
+('7.2to9.6', 'No')
+IF Assists = 7.2to9.6 THEN Ballond'OrNominee = No
+17
+('9.6to12.0', 'Yes')
+IF Assists = 9.6to12.0 THEN Ballond'OrNominee = Yes
+17
+SET OF RULES AVERAGE ACCURACY:  82.3529411765  %
+------------------------------------------
+Starting  10  -th cross over validation
+------------------------------------------
+SubIn 0.7625
+Goals 0.867132867133
+Assists 0.879432624113
+AverageGoalspermatch 0.865771812081
+AverageAssistspermatch 0.824324324324
+Yellow 0.820689655172
+Red 0.770186335404
+SpG 0.835443037975
+AW 0.766871165644
+Tackle 0.766871165644
+Int 0.7625
+Fouls 0.774193548387
+OffWon 0.756756756757
+Clr 0.755102040816
+WasDribbled 0.761589403974
+BlkShots 0.761589403974
+OG 0.765432098765
+KeyPasses 0.816326530612
+Dribbles 0.810810810811
+Fouled 0.767295597484
+Offs 0.806896551724
+Disp 0.78431372549
+Trn 0.789473684211
+Avg.Passes 0.832167832168
+PassSuc% 0.807453416149
+Crosses 0.767741935484
+LB 0.819444444444
+TB 0.815068493151
+CHOSEN ATTR Assists
+('0.0to2.4', 'No')
+IF Assists = 0.0to2.4 THEN Ballond'OrNominee = No
+9
+('2.4to4.8', 'No')
+IF Assists = 2.4to4.8 THEN Ballond'OrNominee = No
+12
+('4.8to7.2', 'No')
+IF Assists = 4.8to7.2 THEN Ballond'OrNominee = No
+15
+('7.2to9.6', 'No')
+IF Assists = 7.2to9.6 THEN Ballond'OrNominee = No
+16
+('9.6to12.0', 'Yes')
+IF Assists = 9.6to12.0 THEN Ballond'OrNominee = Yes
+16
+SET OF RULES AVERAGE ACCURACY:  81.25  %
+------------------------------------------
+10  - fold crossover validation
+ 
+-----------------
+oneR: finished!
+-----------------
+		

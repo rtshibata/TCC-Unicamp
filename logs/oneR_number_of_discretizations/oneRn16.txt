@@ -1,0 +1,52 @@
+
+----------------
+	
+OneR algorithm...
+ACCURACY OF SET Of RULES:  90.0552486188  %
+
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF Apps = 0.0to3.75 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 3.75to7.5 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 7.5to11.25 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 11.25to15.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 15.0to18.75 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 18.75to22.5 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 22.5to26.25 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 26.25to30.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 30.0to33.75 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 33.75to37.5 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 37.5to41.25 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 41.25to45.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 45.0to48.75 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 48.75to52.5 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 52.5to56.25 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 56.25toinf THEN Ballond'OrNominee = Yes
+-------
+testing data...OneR
+-------
+
+Accuracy  55.7692307692  %
+('Correct predicted Instances: ', 29)
+True positive: 3,  False Negative: 23
+False positive: 0, True Negative: 26
+
+

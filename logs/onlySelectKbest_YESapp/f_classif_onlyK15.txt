@@ -1,0 +1,123 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules: 
+*  Ballond'OrNominee -> No
+
+
+Selecting 15 best features...SelectKBest
+.................
+feature descartada: AverageGoalspermatch
+feature descartada: Red
+feature descartada: Int
+feature descartada: OffWon
+feature descartada: Clr
+feature descartada: WasDribbled
+feature descartada: BlkShots
+feature descartada: OG
+feature descartada: KeyPasses
+feature descartada: Dribbles
+feature descartada: Fouled
+feature descartada: Trn
+feature descartada: PassSuc%
+feature descartada: Crosses
+-----------------select K--------
+
+----------------
+	
+OneR algorithm...
+CHOSEN ATTR Apps
+ACCURACY OF SET Of RULES:  90.0552486188  %
+
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF Apps = 0.0to6.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 6.0to12.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 12.0to18.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 18.0to24.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 24.0to30.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 30.0to36.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 36.0to42.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 42.0to48.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 48.0to54.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 54.0toinf THEN Ballond'OrNominee = Yes
+
+----------------
+	
+Logistic Regression algorithm...
+('ACCURACY: ', 86.1878453038674, ' %')
+
+----------------
+	
+Decision Tree Classifier algorithm...
+('ACCURACY: ', 100.0, ' %')
+
+----------------
+	
+Support Vector Machines(SVM) algorithm...
+('ACCURACY: ', 100.0, ' %')
+
+
+-------
+testing data...ZeroR
+-------
+
+Accuracy  49.0196078431  %
+('Correct predicted Instances: ', 25)
+
+-------
+testing data...OneR
+-------
+
+Accuracy  54.9019607843  %
+('Correct predicted Instances: ', 28)
+True positive: 3,  False Negative: 23
+False positive: 0, True Negative: 25
+
+-------
+testing data...LogisticRegression
+-------
+
+('Accuracy ', 70.58823529411765, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 14,  False Negative: 12
+False positive: 3, True Negative: 22
+
+-------
+testing data...Decision Tree
+-------
+
+('Accuracy ', 66.66666666666666, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 9,  False Negative: 17
+False positive: 0, True Negative: 25
+
+-------
+testing data...SVM(SVC)
+-------
+
+('Accuracy ', 49.01960784313725, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 0,  False Negative: 26
+False positive: 0, True Negative: 25

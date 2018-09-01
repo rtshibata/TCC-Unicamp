@@ -1,0 +1,166 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules: 
+*  Ballond'OrNominee -> No
+
+
+
+----------------
+	
+OneR algorithm...
+discretizing... Apps
+discretizing... SubIn
+discretizing... Goals
+discretizing... Assists
+discretizing... AverageGoalspermatch
+discretizing... AverageAssistspermatch
+discretizing... Yellow
+discretizing... Red
+discretizing... SpG
+discretizing... AW
+discretizing... Tackle
+discretizing... Int
+discretizing... Fouls
+discretizing... OffWon
+discretizing... Clr
+discretizing... WasDribbled
+discretizing... BlkShots
+discretizing... OG
+discretizing... KeyPasses
+discretizing... Dribbles
+discretizing... Fouled
+discretizing... Offs
+discretizing... Disp
+discretizing... Trn
+discretizing... Avg.Passes
+discretizing... PassSuc%
+discretizing... Crosses
+discretizing... LB
+discretizing... TB
+------------------------------------------
+Starting  1  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  84.2105263158  %
+------------------------------------------
+Starting  2  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  94.7368421053  %
+------------------------------------------
+Starting  3  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  72.2222222222  %
+------------------------------------------
+Starting  4  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  94.4444444444  %
+------------------------------------------
+Starting  5  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  83.3333333333  %
+------------------------------------------
+Starting  6  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  83.3333333333  %
+------------------------------------------
+Starting  7  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  8  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  83.3333333333  %
+------------------------------------------
+Starting  9  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  83.3333333333  %
+------------------------------------------
+Starting  10  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  70.5882352941  %
+------------------------------------------
+10  - fold crossover validation
+ 		
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF Apps = 0.0to12.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 12.0to24.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 24.0to36.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 36.0to48.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 48.0toinf THEN Ballond'OrNominee = Yes
+TOTAL AVERAGE ACCURACY:  70.5882352941  %
+
+----------------
+	
+Logistic Regression algorithm...
+('ACCURACY: ', 96.13259668508287, ' %')
+
+----------------
+	
+Decision Tree Classifier algorithm...
+('ACCURACY: ', 100.0, ' %')
+
+----------------
+	
+Support Vector Machines(SVM) algorithm...
+('ACCURACY: ', 100.0, ' %')
+
+
+-------
+testing data...ZeroR
+-------
+
+Accuracy  50.0  %
+('Correct predicted Instances: ', 26)
+
+-------
+testing data...OneR
+-------
+
+Accuracy  51.9230769231  %
+('Correct predicted Instances: ', 27)
+True positive: 1,  False Negative: 25
+False positive: 0, True Negative: 26
+
+-------
+testing data...LogisticRegression
+-------
+
+('Accuracy ', 76.92307692307693, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 15,  False Negative: 11
+False positive: 1, True Negative: 25
+
+-------
+testing data...Decision Tree(SVC)
+-------
+
+('Accuracy ', 69.23076923076923, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 10,  False Negative: 16
+False positive: 0, True Negative: 26
+
+-------
+testing data...SVM(SVC)
+-------
+
+('Accuracy ', 50.0, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 0,  False Negative: 26
+False positive: 0, True Negative: 26

@@ -1,0 +1,84 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     CSV2012-2013_ALL_PLAYERS _No_app_no goalkeeper_ No MOM-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last
+Instances:    181
+Attributes:   29
+              Sub In
+              Goals
+              Assists
+              Average Goals per match
+              Average Assists per match
+              Yellow
+              Red
+              SpG
+              AW
+              Tackle
+              Int
+              Fouls
+              Off Won
+              Clr
+              Was Dribbled
+              Blk Shots
+              OG
+              Key Passes
+              Dribbles
+              Fouled
+              Offs
+              Disp
+              Trn
+              Avg. Passes
+              Pass Suc%
+              Crosses
+              LB
+              TB
+              Ballon d'Or Nominee
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Goals:
+	'(-inf-6.4]'	-> No
+	'(6.4-12.8]'	-> No
+	'(12.8-19.2]'	-> No
+	'(19.2-25.6]'	-> Yes
+	'(25.6-32]'	-> Yes
+	'(32-38.4]'	-> Yes
+	'(38.4-44.8]'	-> Yes
+	'(44.8-51.2]'	-> Yes
+	'(51.2-57.6]'	-> Yes
+	'(57.6-inf)'	-> Yes
+(157/181 instances correct)
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         157               86.7403 %
+Incorrectly Classified Instances        24               13.2597 %
+Kappa statistic                          0.5538
+Mean absolute error                      0.1326
+Root mean squared error                  0.3641
+Relative absolute error                 37.0414 %
+Root relative squared error             86.2586 %
+Total Number of Instances              181     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,476    0,014    0,909      0,476    0,625      0,597    0,731     0,554     Yes
+                 0,986    0,524    0,862      0,986    0,919      0,597    0,731     0,860     No
+Weighted Avg.    0,867    0,406    0,873      0,867    0,851      0,597    0,731     0,789     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  20  22 |   a = Yes
+   2 137 |   b = No
+
+

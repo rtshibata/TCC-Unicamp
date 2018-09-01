@@ -1,0 +1,286 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules: 
+*  Ballond'OrNominee -> No
+
+
+
+----------------
+	
+OneR algorithm...
+discretizing... Apps
+discretizing... SubIn
+discretizing... Goals
+discretizing... Assists
+discretizing... AverageGoalspermatch
+discretizing... AverageAssistspermatch
+discretizing... Yellow
+discretizing... Red
+discretizing... SpG
+discretizing... AW
+discretizing... Tackle
+discretizing... Int
+discretizing... Fouls
+discretizing... OffWon
+discretizing... Clr
+discretizing... WasDribbled
+discretizing... BlkShots
+discretizing... OG
+discretizing... KeyPasses
+discretizing... Dribbles
+discretizing... Fouled
+discretizing... Offs
+discretizing... Disp
+discretizing... Trn
+discretizing... Avg.Passes
+discretizing... PassSuc%
+discretizing... Crosses
+discretizing... LB
+discretizing... TB
+CHOSEN ATTR Apps
+ACCURACY OF SET Of RULES:  90.0552486188  %
+
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF Apps = 0.0to6.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 6.0to12.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 12.0to18.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 18.0to24.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 24.0to30.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 30.0to36.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 36.0to42.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 42.0to48.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 48.0to54.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 54.0toinf THEN Ballond'OrNominee = Yes
+
+----------------
+	
+Logistic Regression algorithm...
+('ACCURACY: ', 92.26519337016575, ' %')
+{'warm_start': False, 'C': 1.0, 'n_jobs': 1, 'verbose': 0, 'intercept_scaling': 1, 'fit_intercept': True, 'max_iter': 100, 'penalty': 'l2', 'multi_class': 'ovr', 'random_state': None, 'dual': False, 'tol': 0.0001, 'solver': 'liblinear', 'class_weight': None}
+
+----------------
+	
+Decision Tree Classifier algorithm...
+('ACCURACY: ', 100.0, ' %')
+{'presort': False, 'splitter': 'best', 'min_impurity_decrease': 0.0, 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'min_impurity_split': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+
+----------------
+	
+Support Vector Machines(SVM) algorithm...
+('ACCURACY: ', 100.0, ' %')
+{'presort': False, 'splitter': 'best', 'min_impurity_decrease': 0.0, 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'min_impurity_split': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+
+
+-------
+testing data...ZeroR
+-------
+
+Accuracy  49.0196078431  %
+('Correct predicted Instances: ', 25)
+Marc Albrighton
+Recio
+Max Kruse
+Robin Knoche
+John Guidetti
+Bafetimbi Gomis
+Fernando Llorente
+Andrea Petagna
+Florin Andone
+Dusan Tadic
+Roberto Inglese
+Adam Lallana
+Chicharito
+Carlos Vela
+Lucas Moura
+Gabriel Paletta
+Gabriel Pires
+Diego Rolan
+Andros Townsend
+Roque Mesa
+Carlos Bacca
+Kiko Fermenia
+Morgan Schneiderlin
+Ruben Castro
+Mateo Musacchio
+
+-------
+testing data...OneR
+-------
+
+Accuracy  54.9019607843  %
+('Correct predicted Instances: ', 28)
+True positive: 3,  False Negative: 23
+False positive: 0, True Negative: 25
+No Gabriel Paletta
+No Recio
+No Morgan Schneiderlin
+No Max Kruse
+No Robin Knoche
+No Roberto Inglese
+No Diego Rolan
+No John Guidetti
+No Fernando Llorente
+No Adam Lallana
+No Chicharito
+No Carlos Bacca
+No Kiko Fermenia
+No Mateo Musacchio
+No Bafetimbi Gomis
+No Andrea Petagna
+No Florin Andone
+No Dusan Tadic
+No Carlos Vela
+No Lucas Moura
+No Gabriel Pires
+No Andros Townsend
+No Roque Mesa
+No Ruben Castro
+No Marc Albrighton
+Yes Cristiano Ronaldo
+Yes Luis Suárez
+Yes Antoine Griezmann
+
+-------
+testing data...LogisticRegression
+-------
+
+('Accuracy ', 70.58823529411765, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 14,  False Negative: 12
+False positive: 3, True Negative: 22
+Yes Cristiano Ronaldo
+Yes Lionel Messi
+Yes Neymar Jr
+Yes Eden Hazard
+Yes Luis Suárez
+Yes Dries Mertens
+Yes Kevin De Bruyne
+Yes Robert Lewandowski
+Yes Harry Kane 
+Yes Edin Dzeko
+Yes Antoine Griezmann
+Yes Sadio Mane
+Yes Toni Kroos
+Yes Pierre-Emerick Aubameyang
+No Marc Albrighton
+No Recio
+No Robin Knoche
+No John Guidetti
+No Fernando Llorente
+No Andrea Petagna
+No Florin Andone
+No Dusan Tadic
+No Roberto Inglese
+No Adam Lallana
+No Chicharito
+No Carlos Vela
+No Lucas Moura
+No Gabriel Pires
+No Diego Rolan
+No Andros Townsend
+No Roque Mesa
+No Carlos Bacca
+No Kiko Fermenia
+No Morgan Schneiderlin
+No Ruben Castro
+No Mateo Musacchio
+
+-------
+testing data...Decision Tree(SVC)
+-------
+
+('Accuracy ', 66.66666666666666, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 9,  False Negative: 17
+False positive: 0, True Negative: 25
+Yes Lionel Messi
+Yes Kylian Mbappe
+Yes Dries Mertens
+Yes Robert Lewandowski
+Yes Harry Kane 
+Yes Edin Dzeko
+Yes Antoine Griezmann
+Yes Pierre-Emerick Aubameyang
+Yes Radamel Falcao
+No Marc Albrighton
+No Recio
+No Max Kruse
+No Robin Knoche
+No John Guidetti
+No Bafetimbi Gomis
+No Fernando Llorente
+No Andrea Petagna
+No Florin Andone
+No Dusan Tadic
+No Roberto Inglese
+No Adam Lallana
+No Chicharito
+No Carlos Vela
+No Lucas Moura
+No Gabriel Paletta
+No Gabriel Pires
+No Diego Rolan
+No Andros Townsend
+No Roque Mesa
+No Carlos Bacca
+No Kiko Fermenia
+No Morgan Schneiderlin
+No Ruben Castro
+No Mateo Musacchio
+
+-------
+testing data...SVM(SVC)
+-------
+
+('Accuracy ', 49.01960784313725, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 0,  False Negative: 26
+False positive: 0, True Negative: 25
+No Marc Albrighton
+No Recio
+No Max Kruse
+No Robin Knoche
+No John Guidetti
+No Bafetimbi Gomis
+No Fernando Llorente
+No Andrea Petagna
+No Florin Andone
+No Dusan Tadic
+No Roberto Inglese
+No Adam Lallana
+No Chicharito
+No Carlos Vela
+No Lucas Moura
+No Gabriel Paletta
+No Gabriel Pires
+No Diego Rolan
+No Andros Townsend
+No Roque Mesa
+No Carlos Bacca
+No Kiko Fermenia
+No Morgan Schneiderlin
+No Ruben Castro
+No Mateo Musacchio

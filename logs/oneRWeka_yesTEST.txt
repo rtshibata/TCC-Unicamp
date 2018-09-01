@@ -1,0 +1,135 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 0 -num-decimal-places 6
+Relation:     CSV2012-2013_ALL_PLAYERS _YES_app_no goalkeeper_ No MOM
+Instances:    181
+Attributes:   30
+              Apps
+              SubIn
+              Goals
+              Assists
+              AverageGoalspermatch
+              AverageAssistspermatch
+              Yellow
+              Red
+              SpG
+              AW
+              Tackle
+              Int
+              Fouls
+              OffWon
+              Clr
+              WasDribbled
+              BlkShots
+              OG
+              KeyPasses
+              Dribbles
+              Fouled
+              Offs
+              Disp
+              Trn
+              Avg.Passes
+              PassSuc%
+              Crosses
+              LB
+              TB
+              Ballond'OrNominee
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Avg.Passes:
+	< 0.75	-> Yes
+	< 19.73152254	-> No
+	< 20.03030303	-> Yes
+	< 20.689090909999997	-> No
+	< 21.21942815	-> Yes
+	< 22.60693816	-> No
+	< 22.660784315	-> Yes
+	< 24.35327869	-> No
+	< 24.78	-> Yes
+	< 25.257926134999998	-> No
+	< 25.53344697	-> Yes
+	< 25.79375	-> No
+	< 25.951666664999998	-> Yes
+	< 27.549808675	-> No
+	< 27.861509255	-> Yes
+	< 30.321929825	-> No
+	< 30.571929825	-> Yes
+	< 31.261330559999998	-> No
+	< 31.295945945	-> Yes
+	< 32.307843135	-> No
+	< 32.564093135	-> Yes
+	< 33.805425220000004	-> No
+	< 33.961391129999996	-> Yes
+	< 35.04224138	-> No
+	< 35.29778658	-> Yes
+	< 36.443396225	-> No
+	< 36.993396225	-> Yes
+	< 39.575	-> No
+	< 39.66346154	-> Yes
+	< 41.476229509999996	-> No
+	< 41.77622951	-> Yes
+	< 42.67689394	-> No
+	< 43.114918415	-> Yes
+	< 44.48139535	-> No
+	< 44.993859650000005	-> Yes
+	< 45.134343435000005	-> No
+	< 45.984343435	-> Yes
+	< 49.592002844999996	-> No
+	< 49.95246796	-> Yes
+	< 50.695	-> No
+	< 51.695	-> Yes
+	< 52.501020409999995	-> No
+	< 52.55102041	-> Yes
+	< 52.78653846	-> No
+	< 53.54925926	-> Yes
+	< 60.165686275	-> No
+	< 62.750071735	-> Yes
+	< 65.81762749500001	-> No
+	< 74.327926585	-> Yes
+	< 75.128344295	-> No
+	< 5862.71034485	-> Yes
+	< 14375.0	-> No
+	< 33160.0	-> Yes
+	< 64655.5	-> No
+	>= 64655.5	-> Yes
+(180/181 instances correct)
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          32               61.5385 %
+Incorrectly Classified Instances        20               38.4615 %
+Kappa statistic                          0.2308
+K&B Relative Info Score               1888.5707 %
+K&B Information Score                   14.8551 bits      0.2857 bits/instance
+Class complexity | order 0              64.3721 bits      1.2379 bits/instance
+Class complexity | scheme            21480      bits    413.0769 bits/instance
+Complexity improvement     (Sf)     -21415.6279 bits   -411.839  bits/instance
+Mean absolute error                      0.3846
+Root mean squared error                  0.6202
+Relative absolute error                 76.9231 %
+Root relative squared error            109.5913 %
+Total Number of Instances               52     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,346    0,115    0,750      0,346    0,474      0,274    0,615     0,587     Yes
+                 0,885    0,654    0,575      0,885    0,697      0,274    0,615     0,566     No
+Weighted Avg.    0,615    0,385    0,663      0,615    0,585      0,274    0,615     0,576     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+  9 17 |  a = Yes
+  3 23 |  b = No
+
+s

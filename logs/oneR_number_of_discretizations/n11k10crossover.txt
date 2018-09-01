@@ -1,0 +1,178 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules: 
+*  Ballond'OrNominee -> No
+
+
+
+----------------
+	
+OneR algorithm...
+discretizing... Apps
+discretizing... SubIn
+discretizing... Goals
+discretizing... Assists
+discretizing... AverageGoalspermatch
+discretizing... AverageAssistspermatch
+discretizing... Yellow
+discretizing... Red
+discretizing... SpG
+discretizing... AW
+discretizing... Tackle
+discretizing... Int
+discretizing... Fouls
+discretizing... OffWon
+discretizing... Clr
+discretizing... WasDribbled
+discretizing... BlkShots
+discretizing... OG
+discretizing... KeyPasses
+discretizing... Dribbles
+discretizing... Fouled
+discretizing... Offs
+discretizing... Disp
+discretizing... Trn
+discretizing... Avg.Passes
+discretizing... PassSuc%
+discretizing... Crosses
+discretizing... LB
+discretizing... TB
+------------------------------------------
+Starting  1  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  94.7368421053  %
+------------------------------------------
+Starting  2  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  89.4736842105  %
+------------------------------------------
+Starting  3  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  88.8888888889  %
+------------------------------------------
+Starting  4  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  88.8888888889  %
+------------------------------------------
+Starting  5  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  100.0  %
+------------------------------------------
+Starting  6  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  88.8888888889  %
+------------------------------------------
+Starting  7  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  8  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  77.7777777778  %
+------------------------------------------
+Starting  9  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  88.8888888889  %
+------------------------------------------
+Starting  10  -th cross over validation
+------------------------------------------
+SET OF RULES AVERAGE ACCURACY:  76.4705882353  %
+------------------------------------------
+10  - fold crossover validation
+ 		
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF Apps = 0.0to5.4545455 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 5.4545455to10.9090909 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 10.909091to16.3636364 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 16.3636365to21.8181819 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 21.818182to27.2727274 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 27.2727275to32.7272729 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 32.727273to38.1818184 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 38.1818185to43.6363639 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 43.636364to49.0909094 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 49.0909095to54.5454549 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 54.545455toinf THEN Ballond'OrNominee = Yes
+TOTAL AVERAGE ACCURACY:  76.4705882353  %
+
+----------------
+	
+Logistic Regression algorithm...
+('ACCURACY: ', 96.13259668508287, ' %')
+
+----------------
+	
+Decision Tree Classifier algorithm...
+('ACCURACY: ', 100.0, ' %')
+
+----------------
+	
+Support Vector Machines(SVM) algorithm...
+('ACCURACY: ', 100.0, ' %')
+
+
+-------
+testing data...ZeroR
+-------
+
+Accuracy  50.0  %
+('Correct predicted Instances: ', 26)
+
+-------
+testing data...OneR
+-------
+
+Accuracy  51.9230769231  %
+('Correct predicted Instances: ', 27)
+True positive: 1,  False Negative: 25
+False positive: 0, True Negative: 26
+
+-------
+testing data...LogisticRegression
+-------
+
+('Accuracy ', 76.92307692307693, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 15,  False Negative: 11
+False positive: 1, True Negative: 25
+
+-------
+testing data...Decision Tree(SVC)
+-------
+
+('Accuracy ', 71.15384615384616, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 11,  False Negative: 15
+False positive: 0, True Negative: 26
+
+-------
+testing data...SVM(SVC)
+-------
+
+('Accuracy ', 50.0, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 0,  False Negative: 26
+False positive: 0, True Negative: 26

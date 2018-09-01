@@ -1,0 +1,35 @@
+
+----------------
+	
+OneR algorithm...
+ACCURACY OF SET Of RULES:  89.5027624309  %
+
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF Apps = 0.0to10.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 10.0to20.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 20.0to30.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 30.0to40.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 40.0to50.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 50.0toinf THEN Ballond'OrNominee = Yes
+
+----------------
+
+-------
+testing data...OneR
+-------
+
+Accuracy  59.6153846154  %
+('Correct predicted Instances: ', 31)
+True positive: 5,  False Negative: 21
+False positive: 0, True Negative: 26
+
+

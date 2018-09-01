@@ -1,0 +1,125 @@
+
+----------------
+loading data...
+----------------
+	
+ZeroR algorithm...
+ACCURACY:  76.7955801105  %
+
+-----------------
+zeroR: finished!
+-----------------
+		
+set of rules: 
+*  Ballond'OrNominee -> No
+
+
+
+----------------
+	
+OneR algorithm...
+ACCURACY OF SET Of RULES:  90.0552486188  %
+
+-----------------
+oneR: finished!
+-----------------
+		
+set of rules: 
+IF Apps = 0.0to3.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 3.0to6.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 6.0to9.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 9.0to12.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 12.0to15.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 15.0to18.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 18.0to21.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 21.0to24.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 24.0to27.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 27.0to30.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 30.0to33.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 33.0to36.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 36.0to39.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 39.0to42.0 THEN Ballond'OrNominee = No
+set of rules: 
+IF Apps = 42.0to45.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 45.0to48.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 48.0to51.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 51.0to54.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 54.0to57.0 THEN Ballond'OrNominee = Yes
+set of rules: 
+IF Apps = 57.0toinf THEN Ballond'OrNominee = Yes
+
+----------------
+	
+Logistic Regression algorithm...
+('ACCURACY: ', 92.26519337016575, ' %')
+
+----------------
+	
+Decision Tree Classifier algorithm...
+('ACCURACY: ', 100.0, ' %')
+
+----------------
+	
+Support Vector Machines(SVM) algorithm...
+('ACCURACY: ', 100.0, ' %')
+
+
+-------
+testing data...ZeroR
+-------
+
+Accuracy  50.0  %
+('Correct predicted Instances: ', 26)
+
+-------
+testing data...OneR
+-------
+
+Accuracy  55.7692307692  %
+('Correct predicted Instances: ', 29)
+True positive: 3,  False Negative: 23
+False positive: 0, True Negative: 26
+
+-------
+testing data...LogisticRegression
+-------
+
+('Accuracy ', 71.15384615384616, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 14,  False Negative: 12
+False positive: 3, True Negative: 23
+
+-------
+testing data...Decision Tree(SVC)
+-------
+
+('Accuracy ', 71.15384615384616, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 11,  False Negative: 15
+False positive: 0, True Negative: 26
+
+-------
+testing data...SVM(SVC)
+-------
+
+('Accuracy ', 50.0, ' %')
+('Correct predicted Instances: ', 0)
+True positive: 0,  False Negative: 26
+False positive: 0, True Negative: 26

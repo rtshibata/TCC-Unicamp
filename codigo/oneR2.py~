@@ -1,0 +1,151 @@
+#!/usr/bin/python
+#import pandas as pd
+import numpy as np
+import math
+from collections import defaultdict
+
+class OneR:
+	"""classe que usa classificador OneR
+
+	It generates one rule for each predictor attribute in the data,
+then selects only 1 attribute, whose set of rules gives the smallest total error 
+
+	PS: In this implementation, it assumes there are only non-negative values in the dataset
+
+	"""
+	#construtor
+	def __init__(self,data_reader,class_values,min_no_bucket,n_discret_bins):
+		self.list_rules = []
+		self.data = data_reader
+		self.class_values = class_values
+		#self.attr_error = defaultdict(int)
+		self.min_no_bucket = min_no_bucket
+		self.n_discret_bins = n_discret_bins	
+	
+	#generate set of rules in a list
+	def produce_rules(self,attr_label,attr_value, class_value, class_label):
+		rule = "IF " + attr_label + " = " + attr_value + " THEN " + class_label + " = " +  class_value
+		self.list_rules.append(rule)
+		
+	#return set of rules
+	def get_selected_rules(self):
+		return self.list_rules
+
+	#return the name of the attribute with the smallest error and its smallest error in a tuple
+	def get_attr_small_error(self,l_all_attr,attr_name):
+		l_total_error = []
+		for list_attr_errors in l_all_attr:			
+			#calculate the total error for all discrete values	
+			total_error = 0				
+			for discrete_value, error in list_attr_errors:
+				total_error += math.fabs(error)
+			l_total_error.insert(0,total_error)
+		#get the smallest error
+		smallest_error = min(l_total_error)	  
+		index_min = np.argmin(l_total_error)
+		chosen_attr = attr_name[index_min]
+		return chosen_attr,smallest_error
+
+	#return the maximum value in the range of values of that attribute(column)
+	def get_max(column):
+		#assuming there are no negative values in the dataset
+		maxv = -1
+		for val in column:
+			if val > maxv:
+				maxv = val
+		return maxv	
+
+	#return the minimum value in the range of values of that attribute(column)
+	def get_min(column):
+		#assuming there are no infinity values in the dataset
+		minv = float("inf") 
+		for val in column:
+			if val < minv:
+				minv = val
+		return minv
+
+	def	substitute_for_discret(self,discret_values):
+		firstline = True
+		j = 0		
+		for row in self.data:
+			for column in row:
+				j += 1			#update the position in the column(starts from 1)
+				for i in range(len(discret_values)):#tests to see in which discret interval does it belong
+					interval = discret_values[i]
+					#break down its name to get its numeric values
+					begin, end = interval.split("to")
+					if column[j] >= float(begin) and column[j] < float(end):
+						#substitute for its discret value
+						column[j] = interval
+						break
+					else:
+						#assumes that each column value will fit in at least one interval
+						continue
+			break#only the 1st iteration is enough
+
+	#discretize the numeric values in a predetermined number of intervals(n_discret_bins) AND substitute the numeric values to new discret values
+	def discretize_data(self):
+		#getting the intervals among all the values of all attributes
+		matrix_discret_values = np.array([])
+		for row in self.data:
+			for column in row:
+				attr_name = column[0] #gets the attribute name
+				attr_values = column[1:]#gets all its values
+				max_val = self.get_max(attr_values) 
+				min_val = self.get_min(attr_values)
+				print min_val, maxval
+				n = self.n_discret_bins 
+				delta = (max_val - min_val)/n
+				format(delta, '.6f') #string with 6 decimals precision
+				interval_init = min_val
+				format(interval_init, '.6f')#string with 6 decimals precision
+				discret_values = np.array([])
+				for i in range(n):#save discret values in array
+					interval_name = interval_init+"to"+interval_init+delta
+					interval_init += delta
+					discret_values.append(interval_name)
+				self.substitute_for_discret(self,discret_values)
+				matrix_discret_values.append(discret_values)
+			break#only the 1st iteration is enough
+		return matrix_discret_values
+
+	#run the algorithm
+	def begin_oneR(self):
+		m_discret_values = self.discretize_data()
+		l_all_attr =[]
+		attr_name = []
+		for row in self.data:
+			for column in row:
+				attr_name.insert(0,column[0]) #gets the attribute name
+				attr_values = column[1:]#gets all its values
+				attr_dict =defaultdict(int)
+				i=1	#first element value in the class column		
+				for discret_value in attr_values:
+					#assuming there are ONLY 2 class values
+					if row[-1][i] == self.class_values[0]:
+						attr_dict[discret_value] += 1#+1 for Yes
+						i += 1 #next element			
+					elif row[-1][i]== self.class_values[1]:
+						attr_dict[discret_value] -= 1#-1 for No 
+						i += 1 #next element
+				#order in crescent order by the discret inverval values and store in a list all intervals and theirs respective difference of Yes and No
+				list_attr_errors = sorted(attr_dict.items())
+				print list_attr_errors
+				l_all_attr.insert(0,list_attr_errors) 
+			break#only the 1st iteration is enough
+		attr_label, min_error = self.get_attr_small_error(l_all_attr,attr_name)			
+		#produce set of rules
+		header_line = next(self.data)
+		index_attr = header_line.index(attr_label)
+		class_label = header_line[-1]
+		attr_values = [row[index_attr] for row in self.data]
+		class_values =  [row[-1] for row in self.data]
+		for discret_value in attr_values:
+			class_value = class_values[i]
+			self.produce_rules(attr_label,discret_value, class_value, class_label)
+		print """
+-----------------
+oneR: finished!
+-----------------
+		"""
+		
