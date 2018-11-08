@@ -1,0 +1,5 @@
+#ignore all python compiled files
+*.pyc
+
+#ignore all temporary python code files
+*.py~
