@@ -18,18 +18,6 @@ import decisiontreeNoZScoreKBest
 import testingSet
 import pandas as pd
 
-'''
-import java.io.FileReader as FileReader
-import weka.core.Instances as Instances
-import weka.classifiers.trees.J48 as J48
-
-from javabridge import JWrapper
-import javabridge
-import weka.core.jvm as jvm
-
-jvm.start()
-'''
-
 path_2_csv_home = "../base"
 path_2_csv_ic ="/home/ec2010/ra082674/TCC/TCC_RenatoShibata/base"
 
@@ -124,23 +112,6 @@ inst_svm.begin_alg()
 param_weight = inst_svm.get_param() 
 #print param_classif
 
-
-
-
-'''
-inst_NormalEq = normal_equations.NormalEquations(data_reader,class_values)
-inst_NormalEq.begin_alg()
-inst_NormalEq.get_theta()
-
-
-file = FileReader(path_2_csv)
-data = Instances(file)
-data.setClassIndex(data.numAttributes() - 1)
-
-c4_5= J48()
-j48.buildClassifier(data)
-print j48
-'''
 
 print """
 
